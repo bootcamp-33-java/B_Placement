@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PlacementPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>models.Role</class>
+    <class>models.BatchClassMember</class>
+    <class>models.SkillSet</class>
+    <class>models.Requester</class>
+    <class>models.Interview</class>
+    <class>models.Skill</class>
+    <class>models.Employee</class>
+    <class>models.Account</class>
+    <class>models.EmployeeRole</class>
+    <class>models.Batch</class>
+    <class>models.RequesterDetail</class>
+    <class>models.Class</class>
+    <class>models.EmployeeInterview</class>
+    <class>models.StudyClass</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="system"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="makankuy"/>
+    </properties>
+  </persistence-unit>
+</persistence>
